@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Product;
 use Illuminate\Http\Request;
 use App\Http\Resources\ProductsCollection;
+use App\ShoppingCart;
+
 class ProductsController extends Controller
 {
 
@@ -20,6 +22,8 @@ class ProductsController extends Controller
      */
     public function index(Request $request)
     {
+
+         //Muestra una colección del recurso
          $products=Product::paginate(15);
          //¿Requiere JSON?
          if($request->wantsJson()){
