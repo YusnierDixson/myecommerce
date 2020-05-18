@@ -39,7 +39,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        <li class="nav-link">{{ $productsCount }}</li>
+                        <li class="nav-link"><product-counter-component :count="{{ $productsCount }}"></product-counter-component></li>
 
                         @guest
                             <li class="nav-item">

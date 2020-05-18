@@ -6,3 +6,44 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
+
+  .app-form > div{
+    margin-top: 1em;
+  }
+
+  .padding{
+    padding:1em;
+  }
+
+  .actions{
+    margin-top: 1em;
+  }
+
+  .text-center .pagination{
+    justify-content: center;
+  }
+
+  .payments{
+    img{
+      margin-bottom: 30px;
+      display: block;
+    }
+  }
+
+  .card-product{
+    max-width: 400px;
+    margin:1em 0;
+    strong{
+      text-transform: uppercase;
+    }
+
+    &.total{
+      margin-top: 2em;
+      padding-top: 2em;
+      border-top: solid 1px #eee;
+    }
+  }

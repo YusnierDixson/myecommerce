@@ -22,4 +22,15 @@ class ShoppingCart extends Model
     public function productsCount(){
        return $this->products()->count();
     }
+// Sumando todo sin usar ciclos solo qcon función sum
+    public function amount()
+    {
+       return $this->products()->sum('price')/100;
+
+
+    }
+    public function amountInCents(){
+        return $this->products()->sum("price");
+      }
+
 }
